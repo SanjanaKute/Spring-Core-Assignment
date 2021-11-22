@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">    
+
+<!-- <bean id="address" class="question1.Address">
+<property name="street" value="palmBeach"></property>
+<property name="city" value="Thane"></property>
+<property name="state" value="Maharashtra"></property>
+<property name="zip" value="12345"></property>
+<property name="country" value="India"></property>
+</bean>
+
+<bean id="customer" class="question1.Customer">
+<property name="customerId" value="098"></property>
+<property name="customerName" value="John"></property>
+<property name="customerContact" value="998877"></property>
+<property name="customerAddress" value="NYCity"></property>
+</bean>
+ -->
+<bean id="address" class="question1.Address">
+<constructor-arg value="palmBeach"/>
+<constructor-arg value="Thane"/>
+<constructor-arg value="Maharastra"/>
+<constructor-arg value="12222"/>
+<constructor-arg value="India"/>
+
+</bean>
+
+</beans>
+
